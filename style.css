@@ -24,6 +24,8 @@ button {
 	padding: 6px 25px 6px 25px;
 }
 
+/* HEADER */
+
 .bgcolor{
 	background-color: #1F2937;
 }
@@ -35,15 +37,17 @@ button {
 	
 }
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
 	padding: 1px;
 	margin: 0px 0px 0px 0px;
 
 }
 .header-links {
-		margin: 0px 200px 0px auto;
-
-		
-
+	margin: 0px 200px 0px auto;
 
 	display: flex;
 	flex-wrap: nowrap;
@@ -53,10 +57,8 @@ button {
 }
 
 .title-div {
+	margin: 0px -8px 0px -8px;
 	padding: 100px 0px 100px 0px;
-
-	
-
 
 	display: flex;
 	flex-wrap: nowrap;
@@ -70,17 +72,12 @@ button {
 	height: 220px;
 	margin: 0px 0px 0px 200px;
 
-	
-
-
 	flex-shrink: 0;
 }
 
 .img-placeholder {
 	background: rgba(255,255,255, 0.6);
 	margin: 0px 200px 0px auto;
-
-	
 	width: 500px;
 	height: 220px;
 
@@ -100,12 +97,26 @@ button {
 
 /*GROUPED SELECTORS*/
 
-.secondary-hero-text, a {
+.secondary-hero-text, a , .footer{
 	color: #E5E7EB;
 }
 .main-hero-text, button {
-		color: #F9FAF8;
+	color: #F9FAF8;
 }
 .button-one {
 	margin-top: 8px;
+}
+
+/* FOOTER */
+
+.footer {
+	position: fixed;
+	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	padding: 25px;
+
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
 }
